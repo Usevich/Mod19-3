@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация покупателя</title>
+</head>
+<body>
+    <h1>Регистрация покупателя</h1>
+    <form method="POST">
+        {% csrf_token %}
+        Имя: <input type="text" name="name" required><br>
+        Баланс: <input type="number" name="balance" required><br>
+        Возраст: <input type="number" name="age" required><br>
+        <button type="submit">Регистрация</button>
+    </form>
+    <li> <a href="/">Главная страница</a></li>
+</body>
+</html>
